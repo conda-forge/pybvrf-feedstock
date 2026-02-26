@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: pybvrf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pybvrf/pybvrf-{{ version }}.tar.gz
-  sha256: 916dd473cd67c7536b490e03e4d32c454502e9c923a144fbe9e34f6e5821f79b
+  sha256: e1978553413b737e1e2f7ac6d4ac73d39ad7d2ba1d8634d00a9f75744eca4c67
 
 build:
   noarch: python
