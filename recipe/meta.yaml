@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.org/packages/source/p/pybvrf/pybvrf-{{ version }}.tar.gz
   sha256: dab55e55bcd0e6fd816f5963a6fb87affc46f9ab80de839e9198e6e8c0ddbd03
+  patches:
+    patches/numpy-min.patch
 
 build:
   noarch: python
