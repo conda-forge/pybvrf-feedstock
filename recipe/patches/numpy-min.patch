@@ -1,0 +1,13 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 76534a9..b6559d1 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -24,7 +24,7 @@ classifiers = [
+ keywords = ["brainvision", "bvrf", "eeg", "neuroscience", "data format", "reader"]
+ dependencies = [
+     "jsonschema>=4.26.0",
+-    "numpy>=2.4.4",
++    "numpy>=2.2.0",
+ ]
+ 
+ [project.optional-dependencies]
