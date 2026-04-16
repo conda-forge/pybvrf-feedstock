@@ -22,8 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - jsonschema >=4.26.0
-    - mne-base >=1.11.0
-    - numpy >=2.2.0
+    - numpy >=2.4.4
 
 test:
   imports:
