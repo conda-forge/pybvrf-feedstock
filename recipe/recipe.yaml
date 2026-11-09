@@ -1,0 +1,48 @@
+context:
+  version: "0.2.0"
+  python_min: "3.12"
+
+package:
+  name: pybvrf
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/p/pybvrf/pybvrf-${{ version }}.tar.gz
+  sha256: 048966231734d1be41c7dedbe28041123ae77aae81c264c7308ac1c8e4f85714
+  patches:
+    - patches/numpy-min.patch
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - uv-build >=0.13.7,<0.14.0
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - jsonschema >=4.26.0
+    - numpy >=2.2.0
+
+tests:
+  - python:
+      imports:
+        - pybvrf
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  homepage: https://github.com/cbrnr/pybvrf
+  repository: https://github.com/cbrnr/pybvrf
+  summary: A Python package for working with BrainVision Recording Format (BVRF) files.
+  license: BSD-3-Clause
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - larsoner
