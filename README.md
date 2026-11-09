@@ -3,11 +3,13 @@ About pybvrf-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pybvrf-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/pybvrf/
+Home: https://github.com/cbrnr/pybvrf
 
 Package license: BSD-3-Clause
 
 Summary: A Python package for working with BrainVision Recording Format (BVRF) files.
+
+Development: https://github.com/cbrnr/pybvrf
 
 Current build status
 ====================
